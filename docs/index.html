@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html {
+            background-color: black;
+            color: white;
+        }
+        .underscore,
+        .hash {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            text-align: center;
+        }
+        .underscore {
+            background-color: white;
+            color: black;
+        }
+        .hash {
+            background-color: black;
+            color: black;
+        }
+    </style>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div>
+        <label>
+            <div style="color:white;">Escoge el número, y se calcularán los 1000 números primos siguientes:</div>
+            <input id="entrada" style="width:100%;" type="number" value="1000" />
+            <button style="width:100%;" onclick="actualizar_numeros()">Actualizar</button>
+        </label>
+    </div>
+    <div id="app"></div>
+</body>
+
+</html>
